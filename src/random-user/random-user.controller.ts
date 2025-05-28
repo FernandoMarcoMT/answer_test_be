@@ -14,8 +14,8 @@ export class RandomUserController {
         @Query('search') search?: string,
     ) {
         const query: TQueryParams = {
-            results,
-            page,
+            results: results || 10,
+            page: page || 1,
             search
         }
         const data = await this.randomUserService.getRestructuredUsers(query);

@@ -1,6 +1,6 @@
 export type TQueryParams = {
-  results?: number;
-  page?: number;
+  results: number;
+  page: number;
   search?: string;
 }
 
